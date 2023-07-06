@@ -1,4 +1,4 @@
-#coding=utf-8
+#encoding:utf-8
 import paddle
 from paddle.nn import Linear
 import paddle.nn.functional as F
