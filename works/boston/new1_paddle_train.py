@@ -49,7 +49,7 @@ optimizer = fluid.optimizer.SGDOptimizer(learning_rate=0.001)
 opts = optimizer.minimize(avg_cost)
 test_program = fluid.default_main_program().clone(for_test=True)
 
-use_cuda = True                         #use_cuda为False,表示运算场所为CPU;use_cuda为True,表示运算场所为GPU           
+use_cuda = False                         #use_cuda为False,表示运算场所为CPU;use_cuda为True,表示运算场所为GPU           
 place = fluid.CUDAPlace(0) if use_cuda else fluid.CPUPlace()
 exe = fluid.Executor(place)              #创建一个Executor实例exe
 exe.run(fluid.default_startup_program()) #Executor的run()方法执行startup_program(),进行参数初始化
