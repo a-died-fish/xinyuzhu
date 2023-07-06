@@ -29,7 +29,7 @@ print(sampledata)
         0.05563625, -0.03475696,  0.02682186, -0.37171335, -0.21419304,
        -0.33569506,  0.10143217, -0.21172912]), array([24.]))
 '''
-paddle.enable_static()
+#paddle.enable_static()
 #定义张量变量x，表示13维的特征值
 #x = paddle.static.data(name='x', shape=[13], dtype='float32')
 x = fluid.layers.data(name='x', shape=[13], dtype='float32')
