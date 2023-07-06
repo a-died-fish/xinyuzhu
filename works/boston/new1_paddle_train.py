@@ -1,3 +1,4 @@
+#encoding:utf-8
 # 导入基本的库
 import paddle.fluid as fluid
 import paddle
