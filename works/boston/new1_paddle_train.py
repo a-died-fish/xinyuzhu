@@ -61,15 +61,15 @@ iter=0
 iters=[]
 train_costs=[]
 
-def draw_train_process(iters,train_costs):
-     title="training cost"
-     plt.title(title, fontsize=24)
-     plt.xlabel("iter", fontsize=14)
-     plt.ylabel("cost", fontsize=14)
-     plt.plot(iters, train_costs,color='red',label='training cost') 
-     plt.grid()
-     plt.savefig("training_testing_loss.png",dpi=300)
-     plt.show()
+# def draw_train_process(iters,train_costs):
+#      title="training cost"
+#      plt.title(title, fontsize=24)
+#      plt.xlabel("iter", fontsize=14)
+#      plt.ylabel("cost", fontsize=14)
+#      plt.plot(iters, train_costs,color='red',label='training cost') 
+#      plt.grid()
+#      plt.savefig("training_testing_loss.png",dpi=300)
+#      plt.show()
 
 
 EPOCH_NUM=50
@@ -110,6 +110,6 @@ for pass_id in range(EPOCH_NUM):                                  #训练EPOCH_N
 #                                   ['x'],            #推理（inference）需要 feed 的数据
 #                                   [y_predict],      #保存推理（inference）结果的 Variables
 #                                   exe)              #exe 保存 inference model
-draw_train_process(iters,train_costs)
+# draw_train_process(iters,train_costs)
 
 
