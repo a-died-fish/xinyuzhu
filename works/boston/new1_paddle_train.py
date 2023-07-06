@@ -84,7 +84,7 @@ for pass_id in range(EPOCH_NUM):                                  #训练EPOCH_N
                              fetch_list=[avg_cost])    
         if batch_id % 40 == 0:
             print("Pass:%d, Cost:%0.5f" % (pass_id, train_cost[0][0]))    #打印最后一个batch的损失值
-            print(avg_cost)
+            #print(avg_cost)
         iter=iter+BATCH_SIZE
         iters.append(iter)
         train_costs.append(train_cost[0][0])
