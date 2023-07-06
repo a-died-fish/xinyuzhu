@@ -4,7 +4,7 @@ import paddle.fluid as fluid
 import paddle
 import numpy as np
 import os
-import matplotlib.pyplot as plt
+#import matplotlib.pyplot as plt
 
 BUF_SIZE=500
 BATCH_SIZE=20
