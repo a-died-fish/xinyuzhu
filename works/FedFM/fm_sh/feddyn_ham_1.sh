@@ -1,0 +1,1 @@
+CUDA_VISIBLE_DEVICES=6 python main.py --use_project_head 0 --dataset=ham10000 --device cuda:2 --model=resnet18_gn --alg=feddyn --lr=0.01 --epochs=10 --comm_round=100 --n_parties=10 --partition=noniid --beta=7.0 --logdir='./logs/' --datadir='/GPFS/data/kaimingxu/dataset/ham10000'

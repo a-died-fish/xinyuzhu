@@ -1,0 +1,1 @@
+CUDA_VISIBLE_DEVICES=0 python main.py --beta=0.5 --dataset=cifar10 --device cuda:2 --model=resnet18_7 --alg=fednova --lr=0.01 --epochs=10 --comm_round=100 --n_parties=10 --partition=noniid --use_project_head 0 --logdir='./logs/' --datadir='/GPFS/data/ruiye/fssl/dataset'

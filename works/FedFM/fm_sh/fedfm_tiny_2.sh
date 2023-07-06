@@ -1,0 +1,1 @@
+CUDA_VISIBLE_DEVICES=6 python main.py --use_project_head 0 --lam_fm 10.0 --start_ep_fm 10 --dataset=tinyimagenet --device cuda:2 --model=resnet50 --alg=fedfm --lr=0.01 --epochs=10 --comm_round=40 --n_parties=10 --partition=noniid-2 --beta=0.5 --logdir='./logs/' --datadir='/GPFS/data/ruiye/fssl/dataset/tiny_imagenet/tiny-imagenet-200'

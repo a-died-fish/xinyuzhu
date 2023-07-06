@@ -1,0 +1,1 @@
+CUDA_VISIBLE_DEVICES=1 python main.py --use_project_head 0 --lam_fm 50.0 --start_ep_fm 20 --dataset=cifar100 --device cuda:2 --model=resnet50 --alg=fedfm --lr=0.01 --epochs=10 --comm_round=100 --n_parties=10 --partition=noniid-2 --beta=0.5 --logdir='./logs/' --datadir='/GPFS/data/ruiye/fssl/dataset/cifar100'

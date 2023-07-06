@@ -1,0 +1,12 @@
+CUDA_VISIBLE_DEVICES=4 python main.py \
+--alg=fedtemplate_add \
+--mu 0.1 \
+--save_feature 0 \
+--print_local_test_acc 0 \
+--dataset=cifar10 \
+--model=resnet18_7 \
+--epochs=10 \
+--comm_round=100 \
+--n_parties=10 \
+--partition=noniid \
+--beta=0.5 --logdir='./logs/' --datadir='/GPFS/data/ruiye/fssl/dataset'

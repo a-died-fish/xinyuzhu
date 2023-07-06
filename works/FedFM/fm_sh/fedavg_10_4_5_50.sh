@@ -1,0 +1,1 @@
+CUDA_VISIBLE_DEVICES=3 python main.py --aggregate_only_iid --n_parties=10 --n_niid_parties 5 --epochs=5 --comm_round=50 --lr=0.01 --use_project_head 0 --dataset=cifar10 --device cuda:2 --model=simple-cnn --alg=fedavg --partition=noniid-4 --logdir='./logs/' --datadir='/GPFS/data/ruiye/fssl/dataset/cifar10'

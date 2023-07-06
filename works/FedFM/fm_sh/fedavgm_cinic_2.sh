@@ -1,0 +1,1 @@
+CUDA_VISIBLE_DEVICES=1 python main.py --server_momentum 0.5 --print_local_test_acc 0 --lr=0.01 --use_project_head 0 --dataset=cinic10 --device cuda:2 --model=resnet18 --alg=fedavg --epochs=10 --comm_round=100 --n_parties=10 --partition=noniid-2 --beta=0.5 --logdir='./logs/' --datadir='/GPFS/data/ruiye/fssl/dataset/cinic10'

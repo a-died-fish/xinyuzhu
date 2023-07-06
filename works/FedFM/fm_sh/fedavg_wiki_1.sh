@@ -1,0 +1,1 @@
+CUDA_VISIBLE_DEVICES=2 python main_regression.py --regression --beta=5.0 --use_project_head 1 --dataset=wiki --device cuda:2 --model=resnet18 --alg=fedavg  --lr=0.01 --epochs=10 --comm_round=100 --n_parties=10 --partition=noniid --logdir='./logs/' --datadir='/GPFS/data/ruiye/fssl/dataset/wiki_crop'
