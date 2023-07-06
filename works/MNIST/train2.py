@@ -1,4 +1,4 @@
-#加载飞桨和相关类库
+#coding=utf-8
 import paddle
 from paddle.nn import Linear
 import paddle.nn.functional as F
