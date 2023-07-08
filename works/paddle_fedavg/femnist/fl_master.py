@@ -40,7 +40,7 @@ model = Model()
 model.cnn()
 
 job_generator = JobGenerator()
-optimizer = fluid.optimizer.Adam(learning_rate=0.1)
+optimizer = fluid.optimizer.Adam(learning_rate=0.01)
 job_generator.set_optimizer(optimizer)
 job_generator.set_losses([model.loss])
 job_generator.set_startup_program(model.startup_program)
