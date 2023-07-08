@@ -61,7 +61,7 @@ def train_test(train_test_program, train_test_feed, train_test_reader):
 
 epoch_id = 0
 step = 0
-epoch = 20
+epoch = 50
 count_by_step = True
 if count_by_step:
     output_folder = "model_node%d" % trainer_id
@@ -100,7 +100,7 @@ while not trainer.stop():
             count += 1
             if count % trainer._step == 0:
                 break
-    # print("acc:%.3f" % (acc[0]))
+    #ls print("acc:%.3f" % (acc[0]))
     else: 
         trainer.run_with_epoch(
             train_reader, feeder, fetch=["accuracy_0.tmp_0"], num_epoch=5)
